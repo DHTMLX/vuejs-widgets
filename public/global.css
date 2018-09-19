@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+html, body {
+    min-height: 100%;
+    padding:0px; margin:0px;
+    font-family: Roboto;
+}
+.widget-box{
+    width: 100%; 
+    height: 100%;
+}
