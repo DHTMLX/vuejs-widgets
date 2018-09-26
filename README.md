@@ -1,21 +1,9 @@
-# vue-demo
+## DHTMLX Widgets + Vue.js
 
-## Project setup
-```
-yarn install
-```
+In most samples DHTMLX Widgets are loaded through NPM that provides limited (GPL) version of components. For production you should use the PRO version.
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+There are also samples where DHTMLX Widgets are loaded from CDN. `cdn.dhtmlx.com` serves limited (GPL) version of components. For production use your own CDN / file server.
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+## Development server
 
-### Lints and fixes files
-```
-yarn run lint
-```
+To run the app in the development mode, run `yarn run serve` in the project directory.
