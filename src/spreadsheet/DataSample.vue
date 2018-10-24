@@ -1,7 +1,7 @@
 <template>
 <div class='app-box'>
   <p>Data and events</p>
-  <Spreadsheeet ref="spreadsheet" class='base-size'></Spreadsheeet>
+  <Spreadsheet ref="spreadsheet" class='base-size'></Spreadsheet>
   <div class="events">{{events}}</div>
   <button v-on:click="parseData">Parse data</button>
   <button v-on:click="clearAll">Clear all</button>
@@ -9,10 +9,10 @@
 </template>
 
 <script>
-import Spreadsheeet from "./Spreadsheet.vue";
+import Spreadsheet from "./Spreadsheet.vue";
 export default {
   components: {
-    Spreadsheeet
+    Spreadsheet
   },
   data: function() {
     return { events: "" };

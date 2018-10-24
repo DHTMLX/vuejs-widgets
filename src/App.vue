@@ -12,7 +12,7 @@
           <router-link to="/config">Pre-configured widget</router-link>
           <router-link to="/cdn">Load from CDN</router-link>
         </nav>
-        <h3>Spreadsheeet</h3>
+        <h3>Spreadsheet</h3>
         <nav>
           <router-link to="/spreadsheet/basic">Basic usage</router-link>
           <router-link to="/spreadsheet/data">Data / Events</router-link>

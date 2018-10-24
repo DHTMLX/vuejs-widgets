@@ -1,24 +1,24 @@
 <template>
 <div class='app-box'>
-  <p>Basic Spreadsheeet</p>
-  <Spreadsheeet class='base-size'></Spreadsheeet>
+  <p>Basic Spreadsheet</p>
+  <Spreadsheet class='base-size'></Spreadsheet>
 
   <hr>
-  <p>Spreadsheeet with menu</p>
-  <Spreadsheeet menu class='base-size'></Spreadsheeet>
+  <p>Spreadsheet with menu</p>
+  <Spreadsheet menu class='base-size'></Spreadsheet>
 
   <hr>
   <p>Minimal layout</p>
-  <Spreadsheeet :edit-line=false class='base-size'></Spreadsheeet>
+  <Spreadsheet :edit-line=false class='base-size'></Spreadsheet>
 
 </div>
 </template>
 
 <script>
-import Spreadsheeet from "./Spreadsheet.vue";
+import Spreadsheet from "./Spreadsheet.vue";
 export default {
   components: {
-    Spreadsheeet
+    Spreadsheet
   }
 };
 </script>
