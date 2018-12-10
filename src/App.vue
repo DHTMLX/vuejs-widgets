@@ -19,6 +19,12 @@
           <router-link to="/spreadsheet/config">Pre-configured widget</router-link>
           <router-link to="/spreadsheet/cdn">Load from CDN</router-link>
         </nav>
+        <h3>Richtext</h3>
+        <nav>
+          <router-link to="/richtext/basic">Basic usage</router-link>
+          <router-link to="/richtext/config">Pre-configured widget</router-link>
+          <router-link to="/richtext/cdn">Load from CDN</router-link>
+        </nav>
       </div>
       <router-view class='app-content'>
       </router-view>
