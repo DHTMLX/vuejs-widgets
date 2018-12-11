@@ -1,25 +1,27 @@
 <template>
 <div class='app-box'>
-  <p>Basic Richtext</p>
-  <RichText class='base-size'></RichText>
+  <p>Classic mode</p>
+  <Richtext mode=classic class='base-size'></Richtext>
+  <p>Document mode</p>
+  <Richtext mode=document class='base-size'></Richtext>
 </div>
 </template>
 
 <script>
-import RichText from "./RichText.vue";
+import Richtext from "./RichText.vue";
 export default {
   components: {
-    RichText
+    Richtext
   }
 };
 </script>
 
 
-<style>
+<style scoped>
 .app-box {
   padding: 20px;
 }
 .base-size {
-  width: 900px;
+  width: 950px;
 }
 </style>

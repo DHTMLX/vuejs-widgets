@@ -15,7 +15,7 @@ import SpreadsheetConfig from "./spreadsheet/ConfigSample.vue";
 import SpreadsheetData from "./spreadsheet/DataSample.vue";
 
 import RichTextBasic from "./richtext/BasicSample.vue";
-import RichTextConfig from "./richtext/RichTextConfig.vue";
+import RichTextData from "./richtext/RichTextData.vue";
 import RichTextCDN from "./richtext/CDNSample.vue";
 
 
@@ -41,7 +41,7 @@ const router = new VueRouter({
 
     { path: '/richtext', redirect: '/richtext/basic' },
     { path: '/richtext/basic', component: RichTextBasic },
-    { path: '/richtext/config', component: RichTextConfig },
+    { path: '/richtext/data', component: RichTextData },
     { path: '/richtext/cdn', component: RichTextCDN },
 
   ]

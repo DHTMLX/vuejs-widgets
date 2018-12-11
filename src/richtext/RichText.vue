@@ -3,18 +3,27 @@
 </template>
 
 <script>
-import { RichText } from "dhx-richtext";
+import { Richtext } from "dhx-richtext";
 import "dhx-richtext/codebase/richtext.css";
 
 export default {
   props: {
       css: String,
-      mode: {type: String, default: "classic"}
+      mode: {type: String, default: "classic"},
+      value: String,
+      dataType: {type: String, default: "html"}
   },
   mounted: function() {
-    this.richtext = new RichText(this.$refs.container, {
+    this.richtext = new Richtext(this.$refs.container, {
       mode: this.mode,
       css: this.css
+    });
+    if (this.value) {
+      this.richtext.setValue(this.value, this.dataType);
+    }
+
+    this.richtext.events.on("change", () => {
+      this.$emit("change", this.richtext.getValue(this.dataType));
     });
   },
   beforeDestroy: function() {
