@@ -23,6 +23,7 @@
         <nav>
           <router-link to="/richtext/basic">Basic usage</router-link>
           <router-link to="/richtext/data">Data / Events</router-link>
+          <router-link to="/richtext/config">Pre-configured widget</router-link>
           <router-link to="/richtext/cdn">Load from CDN</router-link>
         </nav>
       </div>

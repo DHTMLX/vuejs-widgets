@@ -14,9 +14,10 @@ import SpreadsheetCDN from "./spreadsheet/CDNSample.vue";
 import SpreadsheetConfig from "./spreadsheet/ConfigSample.vue";
 import SpreadsheetData from "./spreadsheet/DataSample.vue";
 
-import RichTextBasic from "./richtext/BasicSample.vue";
-import RichTextData from "./richtext/RichTextData.vue";
-import RichTextCDN from "./richtext/CDNSample.vue";
+import RichtextBasic from "./richtext/BasicSample.vue";
+import RichtextData from "./richtext/DataSample.vue";
+import RichtextCDN from "./richtext/CDNSample.vue";
+import RichtextConfig from "./richtext/ConfigSample.vue";
 
 
 Vue.config.productionTip = false
@@ -40,9 +41,10 @@ const router = new VueRouter({
     { path: '/spreadsheet/config', component: SpreadsheetConfig },
 
     { path: '/richtext', redirect: '/richtext/basic' },
-    { path: '/richtext/basic', component: RichTextBasic },
-    { path: '/richtext/data', component: RichTextData },
-    { path: '/richtext/cdn', component: RichTextCDN },
+    { path: '/richtext/basic', component: RichtextBasic },
+    { path: '/richtext/data', component: RichtextData },
+    { path: '/richtext/config', component: RichtextConfig },
+    { path: '/richtext/cdn', component: RichtextCDN },
 
   ]
 });

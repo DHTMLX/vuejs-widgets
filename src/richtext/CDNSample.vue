@@ -1,34 +1,29 @@
 <template>
-<div ref="container" class="widget-box"></div>
+<div class='app-box'>
+  <p>Code for richtext on this page is loaded through CDN on demand</p>
+  <p>You can use promise or event to catch the moment when UI is ready to load the data</p>
+  
+  <RichtextCDN class='base-size'></RichtextCDN>
+
+</div>
 </template>
 
 <script>
-  import fromCDN from "from-cdn";
-
-  export default {
-    props: {
-      mode: {type: String, default: "classic"}
-    },
-    created:function(){
-      this.ready = fromCDN([
-        // "https://cdn.dhtmlx.com/vault/3.0/vault.js",
-        // "https://cdn.dhtmlx.com/vault/3.0/vault.css"
-      ]);
-    },
-    mounted:function(){
-      this.ready.then( () => {
-        /* global dhx */
-        this.richtext = new dhx.Richtext(this.$refs.container, {
-          mode: this.mode
-        });
-
-        this.$emit('ready', this.vault);
-      });
-    },
-    beforeDestroy:function(){
-      if (this.richtext) {
-        this.richtext.destructor();
-      }
-    }
+import RichtextCDN from "./RichtextCDN.vue";
+export default {
+  components: {
+    RichtextCDN
   }
+};
 </script>
+
+
+<style scoped>
+.app-box {
+  padding: 20px;
+}
+.base-size {
+  width: 800px;
+  height: 400px;
+}
+</style>

@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import Richtext from "./RichText.vue";
+import Richtext from "./Richtext.vue";
 export default {
   components: {
     Richtext
